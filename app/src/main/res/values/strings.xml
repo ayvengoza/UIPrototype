@@ -15,4 +15,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about">About</string>
+    <string name="stationary">Stationary</string>
+    <string name="handheld">HandleId</string>
+    <string name="battery">Battery</string>
 </resources>
