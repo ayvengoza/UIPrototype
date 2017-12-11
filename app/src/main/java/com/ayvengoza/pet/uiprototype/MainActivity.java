@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setSupportActionBar(mToolbar);
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        mToolbar.setNavigationIcon(R.drawable.ic_launcher_foreground);
+        mToolbar.setNavigationIcon(R.mipmap.ic_toolbar_navigation);
         mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

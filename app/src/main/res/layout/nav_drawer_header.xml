@@ -15,7 +15,7 @@
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:id="@+id/imageView"
-        android:src="@drawable/ic_launcher_foreground" />
+        android:src="@mipmap/ic_user_default" />
 
     <TextView
         android:fontFamily="sans-serif-medium"
