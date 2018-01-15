@@ -9,10 +9,10 @@ import android.support.annotation.StringRes;
 
 public enum ToolType {
     CLAMPS(R.string.clamps, R.string.clamps_description, R.drawable.hero_image_clamps),
-    SAWS(R.string.saws, R.string.saws_description, R.drawable.hero_image_saws),
-    DRILLS(R.string.drills, R.string.drills_description, R.drawable.hero_image_drills),
-    SANDERS(R.string.sanders, R.string.sanders_description, R.drawable.hero_image_sanders),
-    ROUTERS(R.string.routers, R.string.routers_description, R.drawable.hero_image_routers),
+    SAWS(R.string.saws, R.string.saws_description, R.drawable.hero_image_saw),
+    DRILLS(R.string.drills, R.string.drills_description, R.drawable.hero_image_drill),
+    SANDERS(R.string.sanders, R.string.sanders_description, R.drawable.hero_image_sander),
+    ROUTERS(R.string.routers, R.string.routers_description, R.drawable.hero_image_router),
     MORE(R.string.more, R.string.more_description, R.drawable.hero_image_more);
 
     private final int mToolNameResourceId;

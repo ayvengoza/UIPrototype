@@ -11,28 +11,38 @@ import android.widget.BaseAdapter;
  */
 
 public  class ToolGridAdapter extends BaseAdapter {
-    private Context mContext;
+    private final ToolType[] mToolTypes = ToolType.values();
+    private final Context mContext;
 
     public ToolGridAdapter(Context context){
         mContext = context;
     }
     @Override
     public int getCount() {
-        return 0;
+        return mToolTypes.length;
     }
 
     @Override
     public Object getItem(int position) {
-        return null;
+        return mToolTypes[position];
     }
 
     @Override
     public long getItemId(int position) {
-        return 0;
+        return position;
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        return null;
+        final CaptionedImageView captionedImageView;
+        if(convertView == null){
+            captionedImageView = new CaptionedImageView(mContext);
+        } else {
+            captionedImageView = (CaptionedImageView) convertView;
+        }
+        final ToolType toolType = mToolTypes[position];
+        captionedImageView.setImageResource(toolType.getToolImageResourceId());
+        captionedImageView.getTextView().setText(toolType.getToolNameResourceId());
+        return captionedImageView;
     }
 }
